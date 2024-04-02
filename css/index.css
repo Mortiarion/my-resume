@@ -15,7 +15,7 @@ body {
     --minor-font: "Raleway", sans-serif;
     --color-white: #ffffff;
     --color-black: #000000;
-    /* --color-grey: #80808099; */
+    --color-grey: #80808099;
     --color-blue: #0000ff;
     --color-blak99: #00000099;
 }
@@ -43,19 +43,19 @@ ul {
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--color-blak99);
     margin-bottom: 10px;
 }
 
 li {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 a {
     text-decoration: none;
     color: var(--color-black);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .wrapper {
@@ -66,9 +66,6 @@ a {
 
 main {
     flex: 1 1 auto;
-}
-
-.container {
 }
 
 .header-wrapper {
@@ -83,6 +80,11 @@ main {
 
 .code-js-img {
     height: 150px;
+}
+
+.work {
+    color: var(--color-grey);
+    margin-bottom: 10px;
 }
 
 .my-photo {
@@ -117,8 +119,7 @@ section .container {
 
 .hard-skills,
 .soft-skills,
-.learn-language,
-.my-portfolio {
+.learn-language {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -126,4 +127,55 @@ section .container {
 }
 
 .my-portfolio {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.my-portfolio img {
+    border-radius: 8px;
+    border: 1px solid var(--color-grey);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    section .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .container-skills {
+        display: flex;
+        gap: 20px;
+    }
+    .my-photo {
+        width: 220px;
+        height: 220px;
+        background-position: -78px -78px;
+    }
+    .code-js-img {
+        height: 220px;
+    }
+    .header-wrapper {
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    section .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 }
